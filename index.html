@@ -343,7 +343,7 @@ function loadCarriedTodos() {
     if (!Array.isArray(pending) || pending.length === 0) return;
 
     const note = document.getElementById("carried-note");
-    note.textContent = `📌 昨日有 ${pending.length} 項未完成事項已自動帶入`;
+    note.textContent = `📌 上次有 ${pending.length} 項未完成事項已自動帶入`;
     note.style.display = "block";
 
     pending.forEach(text => { if (text) makeTodoItem(text, true); });
