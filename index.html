@@ -417,7 +417,7 @@ async function handleSubmit() {
     await fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
     savePendingTodos();
     banner.className="banner ok";
-    banner.textContent="記錄已成功送出！未完成待辦已記住，明天會自動出現 ✓";
+    banner.textContent="記錄已成功送出！未完成待辦已記住，下次會自動出現 ✓";
   } catch(err) {
     banner.className="banner err";
     banner.textContent="送出失敗，請確認網路連線後重試。";
